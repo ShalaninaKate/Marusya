@@ -1858,6 +1858,10 @@ body.ie ._ibg img {
   width: 100%;
 }
 
+.steps-info__title._tab-active {
+  outline: none;
+}
+
 .steps-info__title._tab-active::after {
   content: "";
   position: absolute;
