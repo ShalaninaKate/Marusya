@@ -49,7 +49,7 @@ window.onload = function () {
 
 
 //Swiper
-const swiper = new Swiper('.gallery__slider',{
+const swiper1 = new Swiper('.gallery__slider-1',{
 	 	observer: true,
 		observeParents: true,
 		slidesPerView: 1,
@@ -81,17 +81,267 @@ const swiper = new Swiper('.gallery__slider',{
 		},
 		// Dotts
 		pagination: {
-			el: '.gallery__dots',
+			el: '.gallery__dots-1',
 			clickable: true,
 		},
 		// Arrows
 		navigation: {
-			nextEl: '.galerry__arrows .slider-arrow_prev',
-			prevEl: '.galerry__arrows .slider-arrow_next',
+			nextEl: '.galerry__arrows_1 .slider-arrow_prev',
+			prevEl: '.galerry__arrows_1 .slider-arrow_next',
 		},
 })
 
+const swiper2 = new Swiper('.gallery__slider-2',{
+	observer: true,
+  observeParents: true,
+  slidesPerView: 1,
+  spaceBetween: 32,
+  speed: 800,
+  loop: true,
+  watchOverflow: true,
+  // Управление клавиатурой
+  keyboard: {
+  // Включить\выключить
+  enabled: true,
+  // Включить\выключить
+  // только когда слайдер
+  // в пределах вьюпорта
+  onlyInViewport: true,
+  // Включить\выключить
+  // управление клавишами
+  // pageUp, pageDown
+  pageUpDown: true,
+  },
 
+// Управление колесом мыши
+  mousewheel: {
+  // Чувствительность колеса мыши
+  sensitivity: 1,
+  // Класс объекта на котором
+  // будет срабатывать прокрутка мышью.
+  //eventsTarget: ".image-slider"
+  },
+  // Dotts
+  pagination: {
+	  el: '.gallery__dots-2',
+	  clickable: true,
+  },
+  // Arrows
+  navigation: {
+	nextEl: '.galerry__arrows_2 .slider-arrow_prev',
+	prevEl: '.galerry__arrows_2 .slider-arrow_next',
+  },
+})
+
+const swiper3 = new Swiper('.gallery__slider-3',{
+	observer: true,
+  observeParents: true,
+  slidesPerView: 1,
+  spaceBetween: 32,
+  speed: 800,
+  loop: true,
+  watchOverflow: true,
+  // Управление клавиатурой
+  keyboard: {
+  // Включить\выключить
+  enabled: true,
+  // Включить\выключить
+  // только когда слайдер
+  // в пределах вьюпорта
+  onlyInViewport: true,
+  // Включить\выключить
+  // управление клавишами
+  // pageUp, pageDown
+  pageUpDown: true,
+  },
+
+// Управление колесом мыши
+  mousewheel: {
+  // Чувствительность колеса мыши
+  sensitivity: 1,
+  // Класс объекта на котором
+  // будет срабатывать прокрутка мышью.
+  //eventsTarget: ".image-slider"
+  },
+  // Dotts
+  pagination: {
+	  el: '.gallery__dots-3',
+	  clickable: true,
+  },
+  // Arrows
+  navigation: {
+	  nextEl: '.galerry__arrows_3 .slider-arrow_prev',
+	  prevEl: '.galerry__arrows_3 .slider-arrow_next',
+  },
+})
+
+const swiper4 = new Swiper('.gallery__slider-4',{
+	observer: true,
+  observeParents: true,
+  slidesPerView: 1,
+  spaceBetween: 32,
+  speed: 800,
+  loop: true,
+  watchOverflow: true,
+  // Управление клавиатурой
+  keyboard: {
+  // Включить\выключить
+  enabled: true,
+  // Включить\выключить
+  // только когда слайдер
+  // в пределах вьюпорта
+  onlyInViewport: true,
+  // Включить\выключить
+  // управление клавишами
+  // pageUp, pageDown
+  pageUpDown: true,
+  },
+
+// Управление колесом мыши
+  mousewheel: {
+  // Чувствительность колеса мыши
+  sensitivity: 1,
+  // Класс объекта на котором
+  // будет срабатывать прокрутка мышью.
+  //eventsTarget: ".image-slider"
+  },
+  // Dotts
+  pagination: {
+	  el: '.gallery__dots-4',
+	  clickable: true,
+  },
+  // Arrows
+  navigation: {
+	  nextEl: '.galerry__arrows_4 .slider-arrow_prev',
+	  prevEl: '.galerry__arrows_4 .slider-arrow_next',
+  },
+})
+
+const swiper5 = new Swiper('.gallery__slider-5',{
+	observer: true,
+  observeParents: true,
+  slidesPerView: 1,
+  spaceBetween: 32,
+  speed: 800,
+  loop: true,
+  watchOverflow: true,
+  // Управление клавиатурой
+  keyboard: {
+  // Включить\выключить
+  enabled: true,
+  // Включить\выключить
+  // только когда слайдер
+  // в пределах вьюпорта
+  onlyInViewport: true,
+  // Включить\выключить
+  // управление клавишами
+  // pageUp, pageDown
+  pageUpDown: true,
+  },
+
+// Управление колесом мыши
+  mousewheel: {
+  // Чувствительность колеса мыши
+  sensitivity: 1,
+  // Класс объекта на котором
+  // будет срабатывать прокрутка мышью.
+  //eventsTarget: ".image-slider"
+  },
+  // Dotts
+  pagination: {
+	  el: '.gallery__dots-5',
+	  clickable: true,
+  },
+  // Arrows
+  navigation: {
+	  nextEl: '.galerry__arrows_5 .slider-arrow_prev',
+	  prevEl: '.galerry__arrows_5 .slider-arrow_next',
+  },
+})
+
+const swiper6 = new Swiper('.gallery__slider-6',{
+	observer: true,
+  observeParents: true,
+  slidesPerView: 1,
+  spaceBetween: 32,
+  speed: 800,
+  loop: true,
+  watchOverflow: true,
+  // Управление клавиатурой
+  keyboard: {
+  // Включить\выключить
+  enabled: true,
+  // Включить\выключить
+  // только когда слайдер
+  // в пределах вьюпорта
+  onlyInViewport: true,
+  // Включить\выключить
+  // управление клавишами
+  // pageUp, pageDown
+  pageUpDown: true,
+  },
+
+// Управление колесом мыши
+  mousewheel: {
+  // Чувствительность колеса мыши
+  sensitivity: 1,
+  // Класс объекта на котором
+  // будет срабатывать прокрутка мышью.
+  //eventsTarget: ".image-slider"
+  },
+  // Dotts
+  pagination: {
+	  el: '.gallery__dots-6',
+	  clickable: true,
+  },
+  // Arrows
+  navigation: {
+	  nextEl: '.galerry__arrows_6 .slider-arrow_prev',
+	  prevEl: '.galerry__arrows_6 .slider-arrow_next',
+  },
+})
+
+const swiper7 = new Swiper('.gallery__slider-7',{
+	observer: true,
+  observeParents: true,
+  slidesPerView: 1,
+  spaceBetween: 32,
+  speed: 800,
+  loop: true,
+  watchOverflow: true,
+  // Управление клавиатурой
+  keyboard: {
+  // Включить\выключить
+  enabled: true,
+  // Включить\выключить
+  // только когда слайдер
+  // в пределах вьюпорта
+  onlyInViewport: true,
+  // Включить\выключить
+  // управление клавишами
+  // pageUp, pageDown
+  pageUpDown: true,
+  },
+
+// Управление колесом мыши
+  mousewheel: {
+  // Чувствительность колеса мыши
+  sensitivity: 1,
+  // Класс объекта на котором
+  // будет срабатывать прокрутка мышью.
+  //eventsTarget: ".image-slider"
+  },
+  // Dotts
+  pagination: {
+	  el: '.gallery__dots-7',
+	  clickable: true,
+  },
+  // Arrows
+  navigation: {
+	  nextEl: '.galerry__arrows_7 .slider-arrow_prev',
+	  prevEl: '.galerry__arrows_7 .slider-arrow_next',
+  },
+})
 
 const imgClass = document.getElementsByClassName("clickable");
 for (let i = 0; i < imgClass.length; i++) {
