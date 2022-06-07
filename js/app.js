@@ -91,6 +91,17 @@ const swiper = new Swiper('.gallery__slider',{
 		},
 })
 
+
+
+const imgClass = document.getElementsByClassName("clickable");
+for (let i = 0; i < imgClass.length; i++) {
+    imgClass[i].addEventListener('click', imageClick, false);
+}
+function imageClick(e) {
+	document.getElementById('image').setAttribute('src', e.target.src);
+      
+};
+
 function testWebP(callback) {
 	var webP = new Image();
 	webP.onload = webP.onerror = function () {
@@ -544,6 +555,9 @@ let _slideToggle = (target, duration = 500) => {
 
 
 
+
+
+	  
 
 //Popups
 //BodyLock
