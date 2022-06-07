@@ -2836,11 +2836,6 @@ body.ie ._ibg img {
     max-width: 100%;
   }
 
-  .popup__close_video {
-    top: 0px;
-    right: 0px;
-  }
-
   .order-furniture__body {
     max-width: 368px;
   }
@@ -3056,6 +3051,11 @@ body.ie ._ibg img {
   .popup__close {
     top: -36px;
     right: -15px;
+  }
+
+  .popup__close_video {
+    top: 0px;
+    right: 0px;
   }
 
   .slider-arrows {
