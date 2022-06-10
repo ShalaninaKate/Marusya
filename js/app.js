@@ -48,300 +48,36 @@ window.onload = function () {
 }
 
 
+
 //Swiper
-const swiper1 = new Swiper('.gallery__slider-1',{
-	 	observer: true,
-		observeParents: true,
-		slidesPerView: 1,
-		spaceBetween: 32,
-		speed: 800,
-		loop: true,
-		watchOverflow: true,
-		// Управление клавиатурой
-		keyboard: {
-		// Включить\выключить
-		enabled: true,
-		// Включить\выключить
-		// только когда слайдер
-		// в пределах вьюпорта
-		onlyInViewport: true,
-		// Включить\выключить
-		// управление клавишами
-		// pageUp, pageDown
-		pageUpDown: true,
-		},
+const swiper1 = new Swiper('.slider-catalog__slider_1',{
+	observer: true,
+	observeParents: true,
+	slidesPerView: 1,
+	spaceBetween: 32,
+	speed: 800,
+	loop: true,
+	watchOverflow: true,
+	// Управление клавиатурой
+	keyboard: {
+	// Включить\выключить
+	enabled: true,
+	// Включить\выключить
+	// только когда слайдер
+	// в пределах вьюпорта
+	onlyInViewport: true,
+	// Включить\выключить
+	// управление клавишами
+	// pageUp, pageDown
+	pageUpDown: true,
+	},
 
-	// Управление колесом мыши
-		mousewheel: {
-		// Чувствительность колеса мыши
-		sensitivity: 1,
-		// Класс объекта на котором
-		// будет срабатывать прокрутка мышью.
-		//eventsTarget: ".image-slider"
-		},
-		// Dotts
-		pagination: {
-			el: '.gallery__dots-1',
-			clickable: true,
-		},
-		// Arrows
 		navigation: {
-			nextEl: '.galerry__arrows_1 .slider-arrow_prev',
-			prevEl: '.galerry__arrows_1 .slider-arrow_next',
+			nextEl: '.slider-catalog__arrows_1 .slider-arrow_prev',
+			prevEl: '.slider-catalog__arrows_1 .slider-arrow_next',
 		},
 })
 
-const swiper2 = new Swiper('.gallery__slider-2',{
-	observer: true,
-  observeParents: true,
-  slidesPerView: 1,
-  spaceBetween: 32,
-  speed: 800,
-  loop: true,
-  watchOverflow: true,
-  // Управление клавиатурой
-  keyboard: {
-  // Включить\выключить
-  enabled: true,
-  // Включить\выключить
-  // только когда слайдер
-  // в пределах вьюпорта
-  onlyInViewport: true,
-  // Включить\выключить
-  // управление клавишами
-  // pageUp, pageDown
-  pageUpDown: true,
-  },
-
-// Управление колесом мыши
-  mousewheel: {
-  // Чувствительность колеса мыши
-  sensitivity: 1,
-  // Класс объекта на котором
-  // будет срабатывать прокрутка мышью.
-  //eventsTarget: ".image-slider"
-  },
-  // Dotts
-  pagination: {
-	  el: '.gallery__dots-2',
-	  clickable: true,
-  },
-  // Arrows
-  navigation: {
-	nextEl: '.galerry__arrows_2 .slider-arrow_prev',
-	prevEl: '.galerry__arrows_2 .slider-arrow_next',
-  },
-})
-
-const swiper3 = new Swiper('.gallery__slider-3',{
-	observer: true,
-  observeParents: true,
-  slidesPerView: 1,
-  spaceBetween: 32,
-  speed: 800,
-  loop: true,
-  watchOverflow: true,
-  // Управление клавиатурой
-  keyboard: {
-  // Включить\выключить
-  enabled: true,
-  // Включить\выключить
-  // только когда слайдер
-  // в пределах вьюпорта
-  onlyInViewport: true,
-  // Включить\выключить
-  // управление клавишами
-  // pageUp, pageDown
-  pageUpDown: true,
-  },
-
-// Управление колесом мыши
-  mousewheel: {
-  // Чувствительность колеса мыши
-  sensitivity: 1,
-  // Класс объекта на котором
-  // будет срабатывать прокрутка мышью.
-  //eventsTarget: ".image-slider"
-  },
-  // Dotts
-  pagination: {
-	  el: '.gallery__dots-3',
-	  clickable: true,
-  },
-  // Arrows
-  navigation: {
-	  nextEl: '.galerry__arrows_3 .slider-arrow_prev',
-	  prevEl: '.galerry__arrows_3 .slider-arrow_next',
-  },
-})
-
-const swiper4 = new Swiper('.gallery__slider-4',{
-	observer: true,
-  observeParents: true,
-  slidesPerView: 1,
-  spaceBetween: 32,
-  speed: 800,
-  loop: true,
-  watchOverflow: true,
-  // Управление клавиатурой
-  keyboard: {
-  // Включить\выключить
-  enabled: true,
-  // Включить\выключить
-  // только когда слайдер
-  // в пределах вьюпорта
-  onlyInViewport: true,
-  // Включить\выключить
-  // управление клавишами
-  // pageUp, pageDown
-  pageUpDown: true,
-  },
-
-// Управление колесом мыши
-  mousewheel: {
-  // Чувствительность колеса мыши
-  sensitivity: 1,
-  // Класс объекта на котором
-  // будет срабатывать прокрутка мышью.
-  //eventsTarget: ".image-slider"
-  },
-  // Dotts
-  pagination: {
-	  el: '.gallery__dots-4',
-	  clickable: true,
-  },
-  // Arrows
-  navigation: {
-	  nextEl: '.galerry__arrows_4 .slider-arrow_prev',
-	  prevEl: '.galerry__arrows_4 .slider-arrow_next',
-  },
-})
-
-const swiper5 = new Swiper('.gallery__slider-5',{
-	observer: true,
-  observeParents: true,
-  slidesPerView: 1,
-  spaceBetween: 32,
-  speed: 800,
-  loop: true,
-  watchOverflow: true,
-  // Управление клавиатурой
-  keyboard: {
-  // Включить\выключить
-  enabled: true,
-  // Включить\выключить
-  // только когда слайдер
-  // в пределах вьюпорта
-  onlyInViewport: true,
-  // Включить\выключить
-  // управление клавишами
-  // pageUp, pageDown
-  pageUpDown: true,
-  },
-
-// Управление колесом мыши
-  mousewheel: {
-  // Чувствительность колеса мыши
-  sensitivity: 1,
-  // Класс объекта на котором
-  // будет срабатывать прокрутка мышью.
-  //eventsTarget: ".image-slider"
-  },
-  // Dotts
-  pagination: {
-	  el: '.gallery__dots-5',
-	  clickable: true,
-  },
-  // Arrows
-  navigation: {
-	  nextEl: '.galerry__arrows_5 .slider-arrow_prev',
-	  prevEl: '.galerry__arrows_5 .slider-arrow_next',
-  },
-})
-
-const swiper6 = new Swiper('.gallery__slider-6',{
-	observer: true,
-  observeParents: true,
-  slidesPerView: 1,
-  spaceBetween: 32,
-  speed: 800,
-  loop: true,
-  watchOverflow: true,
-  // Управление клавиатурой
-  keyboard: {
-  // Включить\выключить
-  enabled: true,
-  // Включить\выключить
-  // только когда слайдер
-  // в пределах вьюпорта
-  onlyInViewport: true,
-  // Включить\выключить
-  // управление клавишами
-  // pageUp, pageDown
-  pageUpDown: true,
-  },
-
-// Управление колесом мыши
-  mousewheel: {
-  // Чувствительность колеса мыши
-  sensitivity: 1,
-  // Класс объекта на котором
-  // будет срабатывать прокрутка мышью.
-  //eventsTarget: ".image-slider"
-  },
-  // Dotts
-  pagination: {
-	  el: '.gallery__dots-6',
-	  clickable: true,
-  },
-  // Arrows
-  navigation: {
-	  nextEl: '.galerry__arrows_6 .slider-arrow_prev',
-	  prevEl: '.galerry__arrows_6 .slider-arrow_next',
-  },
-})
-
-const swiper7 = new Swiper('.gallery__slider-7',{
-	observer: true,
-  observeParents: true,
-  slidesPerView: 1,
-  spaceBetween: 32,
-  speed: 800,
-  loop: true,
-  watchOverflow: true,
-  // Управление клавиатурой
-  keyboard: {
-  // Включить\выключить
-  enabled: true,
-  // Включить\выключить
-  // только когда слайдер
-  // в пределах вьюпорта
-  onlyInViewport: true,
-  // Включить\выключить
-  // управление клавишами
-  // pageUp, pageDown
-  pageUpDown: true,
-  },
-
-// Управление колесом мыши
-  mousewheel: {
-  // Чувствительность колеса мыши
-  sensitivity: 1,
-  // Класс объекта на котором
-  // будет срабатывать прокрутка мышью.
-  //eventsTarget: ".image-slider"
-  },
-  // Dotts
-  pagination: {
-	  el: '.gallery__dots-7',
-	  clickable: true,
-  },
-  // Arrows
-  navigation: {
-	  nextEl: '.galerry__arrows_7 .slider-arrow_prev',
-	  prevEl: '.galerry__arrows_7 .slider-arrow_next',
-  },
-})
 
 const imgClass = document.getElementsByClassName("clickable");
 for (let i = 0; i < imgClass.length; i++) {
@@ -351,6 +87,76 @@ function imageClick(e) {
 	document.getElementById('image').setAttribute('src', e.target.src);
       
 };
+
+
+
+
+const getRandomInt = (min, max) => {
+	const rand = min + Math.random() * (max - min + 1);
+	return Math.floor(rand);
+}
+
+
+const elem = document.querySelectorAll('.item-categories');
+const btn = document.querySelector('.categories__switch-btn');
+
+if(btn){
+	btn.addEventListener('click',function(e){
+		btn.classList.toggle('switch-on');
+		if(btn.classList.contains('switch-on')){
+			for( const item of elem){
+				item.classList.add('_move');
+				item.addEventListener('mouseover', () => {
+					elem[0].style.left = getRandomInt(-200, 700)+"px",
+					elem[0].style.top = getRandomInt(-100, 500)+"px",
+					elem[1].style.left = getRandomInt(-550, 600)+"px",
+					elem[1].style.top = getRandomInt(-100, 500)+"px",
+					elem[2].style.left = getRandomInt(-600, 150)+"px",
+					elem[2].style.top = getRandomInt(-100, 500)+"px",
+					elem[3].style.left = getRandomInt(-100, 700)+"px",
+					elem[3].style.top = getRandomInt(-400, 150)+"px",
+					elem[4].style.left = getRandomInt(-600, 200)+"px",
+					elem[4].style.top = getRandomInt(-600, 100)+"px",
+					elem[5].style.left = getRandomInt(-700, 100)+"px",
+					elem[5].style.top = getRandomInt(-500, 100)+"px"
+				});
+			}
+		}else{
+			for( const item of elem){
+				item.classList.remove('_move');
+				elem[0].style.left = 0,
+					elem[0].style.top = 0,
+					elem[1].style.left = 0,
+					elem[1].style.top = 0,
+					elem[2].style.left = 0,
+					elem[2].style.top = 0,
+					elem[3].style.left = 0,
+					elem[3].style.top = 0,
+					elem[4].style.left = 0,
+					elem[4].style.top = 0,
+					elem[5].style.left = 0,
+					elem[5].style.top = 0
+				item.addEventListener('mouseover', () => {
+					elem[0].style.left = 0,
+					elem[0].style.top = 0,
+					elem[1].style.left = 0,
+					elem[1].style.top = 0,
+					elem[2].style.left = 0,
+					elem[2].style.top = 0,
+					elem[3].style.left = 0,
+					elem[3].style.top = 0,
+					elem[4].style.left = 0,
+					elem[4].style.top = 0,
+					elem[5].style.left = 0,
+					elem[5].style.top = 0
+				});
+			}
+		}
+	})
+}
+	
+
+
 
 function testWebP(callback) {
 	var webP = new Image();
@@ -806,9 +612,6 @@ let _slideToggle = (target, duration = 500) => {
 
 
 
-
-	  
-
 //Popups
 //BodyLock
 let unlock = true;
@@ -936,3 +739,165 @@ document.addEventListener('keydown', function (e) {
 		popup_close();
 	}
 });
+// Dynamic Adapt v.1
+// HTML data-da="where(uniq class name),when(breakpoint),position(digi)"
+// e.x. data-da=".item,992,2"
+// Andrikanych Yevhen 2020
+// https://www.youtube.com/c/freelancerlifestyle
+
+"use strict";
+
+
+function DynamicAdapt(type) {
+	this.type = type;
+}
+
+DynamicAdapt.prototype.init = function () {
+	const _this = this;
+	// массив объектов
+	this.оbjects = [];
+	this.daClassname = "_dynamic_adapt_";
+	// массив DOM-элементов
+	this.nodes = document.querySelectorAll("[data-da]");
+
+	// наполнение оbjects объктами
+	for (let i = 0; i < this.nodes.length; i++) {
+		const node = this.nodes[i];
+		const data = node.dataset.da.trim();
+		const dataArray = data.split(",");
+		const оbject = {};
+		оbject.element = node;
+		оbject.parent = node.parentNode;
+		оbject.destination = document.querySelector(dataArray[0].trim());
+		оbject.breakpoint = dataArray[1] ? dataArray[1].trim() : "767";
+		оbject.place = dataArray[2] ? dataArray[2].trim() : "last";
+		оbject.index = this.indexInParent(оbject.parent, оbject.element);
+		this.оbjects.push(оbject);
+	}
+
+	this.arraySort(this.оbjects);
+
+	// массив уникальных медиа-запросов
+	this.mediaQueries = Array.prototype.map.call(this.оbjects, function (item) {
+		return '(' + this.type + "-width: " + item.breakpoint + "px)," + item.breakpoint;
+	}, this);
+	this.mediaQueries = Array.prototype.filter.call(this.mediaQueries, function (item, index, self) {
+		return Array.prototype.indexOf.call(self, item) === index;
+	});
+
+	// навешивание слушателя на медиа-запрос
+	// и вызов обработчика при первом запуске
+	for (let i = 0; i < this.mediaQueries.length; i++) {
+		const media = this.mediaQueries[i];
+		const mediaSplit = String.prototype.split.call(media, ',');
+		const matchMedia = window.matchMedia(mediaSplit[0]);
+		const mediaBreakpoint = mediaSplit[1];
+
+		// массив объектов с подходящим брейкпоинтом
+		const оbjectsFilter = Array.prototype.filter.call(this.оbjects, function (item) {
+			return item.breakpoint === mediaBreakpoint;
+		});
+		matchMedia.addListener(function () {
+			_this.mediaHandler(matchMedia, оbjectsFilter);
+		});
+		this.mediaHandler(matchMedia, оbjectsFilter);
+	}
+};
+
+DynamicAdapt.prototype.mediaHandler = function (matchMedia, оbjects) {
+	if (matchMedia.matches) {
+		for (let i = 0; i < оbjects.length; i++) {
+			const оbject = оbjects[i];
+			оbject.index = this.indexInParent(оbject.parent, оbject.element);
+			this.moveTo(оbject.place, оbject.element, оbject.destination);
+		}
+	} else {
+		for (let i = 0; i < оbjects.length; i++) {
+			const оbject = оbjects[i];
+			if (оbject.element.classList.contains(this.daClassname)) {
+				this.moveBack(оbject.parent, оbject.element, оbject.index);
+			}
+		}
+	}
+};
+
+// Функция перемещения
+DynamicAdapt.prototype.moveTo = function (place, element, destination) {
+	element.classList.add(this.daClassname);
+	if (place === 'last' || place >= destination.children.length) {
+		destination.insertAdjacentElement('beforeend', element);
+		return;
+	}
+	if (place === 'first') {
+		destination.insertAdjacentElement('afterbegin', element);
+		return;
+	}
+	destination.children[place].insertAdjacentElement('beforebegin', element);
+}
+
+// Функция возврата
+DynamicAdapt.prototype.moveBack = function (parent, element, index) {
+	element.classList.remove(this.daClassname);
+	if (parent.children[index] !== undefined) {
+		parent.children[index].insertAdjacentElement('beforebegin', element);
+	} else {
+		parent.insertAdjacentElement('beforeend', element);
+	}
+}
+
+// Функция получения индекса внутри родителя
+DynamicAdapt.prototype.indexInParent = function (parent, element) {
+	const array = Array.prototype.slice.call(parent.children);
+	return Array.prototype.indexOf.call(array, element);
+};
+
+// Функция сортировки массива по breakpoint и place 
+// по возрастанию для this.type = min
+// по убыванию для this.type = max
+DynamicAdapt.prototype.arraySort = function (arr) {
+	if (this.type === "min") {
+		Array.prototype.sort.call(arr, function (a, b) {
+			if (a.breakpoint === b.breakpoint) {
+				if (a.place === b.place) {
+					return 0;
+				}
+
+				if (a.place === "first" || b.place === "last") {
+					return -1;
+				}
+
+				if (a.place === "last" || b.place === "first") {
+					return 1;
+				}
+
+				return a.place - b.place;
+			}
+
+			return a.breakpoint - b.breakpoint;
+		});
+	} else {
+		Array.prototype.sort.call(arr, function (a, b) {
+			if (a.breakpoint === b.breakpoint) {
+				if (a.place === b.place) {
+					return 0;
+				}
+
+				if (a.place === "first" || b.place === "last") {
+					return 1;
+				}
+
+				if (a.place === "last" || b.place === "first") {
+					return -1;
+				}
+
+				return b.place - a.place;
+			}
+
+			return b.breakpoint - a.breakpoint;
+		});
+		return;
+	}
+};
+
+const da = new DynamicAdapt("max");
+da.init();
