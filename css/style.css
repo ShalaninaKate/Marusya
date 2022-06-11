@@ -3463,6 +3463,11 @@ div.btnbg {
     display: none;
   }
 
+  #stars {
+    -o-object-fit: none;
+       object-fit: none;
+  }
+
   .catalog-top__container {
     padding-top: 10.3125rem;
     margin-bottom: 5rem;
