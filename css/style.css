@@ -3464,8 +3464,7 @@ div.btnbg {
   }
 
   #stars {
-    -o-object-fit: none;
-       object-fit: none;
+    display: none;
   }
 
   .catalog-top__container {
