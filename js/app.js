@@ -115,10 +115,16 @@ if(btn){
 					elem[2].style.top = getRandomInt(-100, 500)+"px",
 					elem[3].style.left = getRandomInt(-100, 700)+"px",
 					elem[3].style.top = getRandomInt(-400, 150)+"px",
-					elem[4].style.left = getRandomInt(-600, 200)+"px",
-					elem[4].style.top = getRandomInt(-600, 100)+"px",
+					elem[4].style.left = getRandomInt(0, 0)+"px",
+					elem[4].style.top = getRandomInt(0, 0)+"px",
 					elem[5].style.left = getRandomInt(-700, 100)+"px",
-					elem[5].style.top = getRandomInt(-500, 100)+"px"
+					elem[5].style.top = getRandomInt(-500, 100)+"px",
+					elem[6].style.left = getRandomInt(-600, 200)+"px",
+					elem[6].style.top = getRandomInt(-600, 100)+"px",
+					elem[7].style.left = getRandomInt(-700, 100)+"px",
+					elem[7].style.top = getRandomInt(-500, 100)+"px",
+					elem[8].style.left = getRandomInt(-700, 100)+"px",
+					elem[8].style.top = getRandomInt(-500, 100)+"px"
 				});
 			}
 		}else{
@@ -135,7 +141,15 @@ if(btn){
 					elem[4].style.left = 0,
 					elem[4].style.top = 0,
 					elem[5].style.left = 0,
-					elem[5].style.top = 0
+					elem[5].style.top = 0,
+					elem[6].style.left = 0,
+					elem[6].style.top = 0,
+					elem[7].style.left = 0,
+					elem[7].style.top = 0,
+					elem[8].style.left = 0,
+					elem[8].style.top = 0
+					
+
 				item.addEventListener('mouseover', () => {
 					elem[0].style.left = 0,
 					elem[0].style.top = 0,
@@ -148,13 +162,35 @@ if(btn){
 					elem[4].style.left = 0,
 					elem[4].style.top = 0,
 					elem[5].style.left = 0,
-					elem[5].style.top = 0
+					elem[5].style.top = 0,
+					elem[6].style.left = 0,
+					elem[6].style.top = 0,
+					elem[7].style.left = 0,
+					elem[7].style.top = 0,
+					elem[8].style.left = 0,
+					elem[8].style.top = 0
 				});
 			}
 		}
 	})
 }
-	
+	//  let inputs = document.querySelectorAll('.input__file');
+	 
+   //  Array.prototype.forEach.call(inputs, function (input) {
+   //    let label = input.nextElementSibling,
+   //      labelVal = label.querySelector('.input__file-button-text').innerText;
+  
+   //    input.addEventListener('change', function (e) {
+   //      let countFiles = '';
+   //      if (this.files && this.files.length >= 1)
+   //        countFiles = this.files.length;
+  
+   //      if (countFiles)
+   //        label.querySelector('.input__file-button-text').innerText = 'Выбрано файлов: ' + countFiles;
+   //      else
+   //        label.querySelector('.input__file-button-text').innerText = labelVal;
+   //    });
+   //  });
 
 
 
