@@ -473,7 +473,6 @@ input[type=file]:before {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  /* identical to box height */
   text-align: center;
   color: #FFFFFF;
 }
@@ -623,15 +622,19 @@ input[type=file]:before {
 
 .page__link-back {
   display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #ffffff;
   font-weight: 600;
+  font-size: 0.875rem;
 }
 
 .page__link-back::before {
   display: inline-block;
   margin-right: 0.75rem;
   color: #E7E7E7;
-  font-size: 0.75rem;
+  font-size: 0.5rem;
 }
 
 ._move {
@@ -1982,8 +1985,8 @@ body.ie ._ibg img {
   position: absolute;
   top: 0rem;
   left: 0rem;
-  width: 90%;
-  height: 90%;
+  width: 80%;
+  height: 80%;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   padding: 3.125rem;
@@ -2465,35 +2468,46 @@ div.btnbg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
-  padding-top: 5.375rem;
+  padding-top: 5.9375rem;
 }
 
 .catalog-top__content {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 100%;
-          flex: 1 1 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .catalog-top__title {
   font-size: 4.875rem;
   color: #FFFFFF;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5625rem;
+}
+
+.catalog-top__text {
+  font-size: 1.0625rem;
+  line-height: 1.53;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 1.3125rem;
 }
 
 .catalog-top__button {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   min-width: 12.5rem;
 }
 
 .catalog-top__picture {
-  -webkit-transform: translate(0px, 5.3125rem);
-      -ms-transform: translate(0px, 5.3125rem);
-          transform: translate(0px, 5.3125rem);
+  -webkit-transform: translate(0px, 3.125rem);
+      -ms-transform: translate(0px, 3.125rem);
+          transform: translate(0px, 3.125rem);
   -webkit-box-flex: 0;
       -ms-flex: 0 0 57%;
           flex: 0 0 57%;
@@ -2756,7 +2770,8 @@ div.btnbg {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 43%;
             flex: 0 1 43%;
-    padding-bottom: 6.0625rem;
+    padding-top: 6.25rem;
+    padding-bottom: 20px;
   }
 
   .catalog-top__picture_round {
@@ -2781,6 +2796,11 @@ div.btnbg {
     -o-object-fit: none;
        object-fit: none;
   }
+}
+
+@media (min-width: 118.75em) {
+  ._no-webp .categories::after{
+    background: url("../img/background/portfolio2.jpg") 0 0/cover no-repeat; }
 }
 
 @media (min-width: 35em) {
@@ -2976,6 +2996,10 @@ div.btnbg {
     padding: 1.4375rem 1.9375rem;
   }
 
+  .page__header {
+    top: 9.375rem;
+  }
+
   .popup__body_video {
     max-width: 100%;
   }
@@ -3150,19 +3174,20 @@ div.btnbg {
   }
 
   .catalog-top__container {
-    padding-top: 12.875rem;
-    margin-bottom: 8.75rem;
+    padding-top: 11.25rem;
+    margin-bottom: 5rem;
   }
 
-  .catalog-top__picture {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 75.8%;
-            flex: 0 0 75.8%;
-    -webkit-transform: translate(50%, 5.75rem);
-        -ms-transform: translate(50%, 5.75rem);
-            transform: translate(50%, 5.75rem);
-    padding-right: 0rem;
-    margin-top: -11.25rem;
+  .catalog-top__content {
+    padding-top: 6.25rem;
+  }
+
+  .catalog-top__content {
+    padding-top: 0;
+  }
+
+  .catalog-top__text {
+    font-size: 0.875rem;
   }
 
   .catalog-top__image {
@@ -3226,6 +3251,7 @@ div.btnbg {
 
   .page__header {
     top: 6.25rem;
+    display: none;
   }
 
   .slider-arrows {
@@ -3522,6 +3548,8 @@ div.btnbg {
   }
 
   .catalog-top__container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding-top: 8.75rem;
     margin-bottom: 5rem;
   }
@@ -4052,8 +4080,8 @@ div.btnbg {
     background: #FFFFFF;
   }
 
-  .page__link-back:hover::before {
-    color: #9F0A0C;
+  .page__link-back:hover {
+    text-decoration: underline;
   }
 
   .header__location:hover::before {
@@ -4185,3 +4213,8 @@ div.btnbg {
 ._webp .catalog-top::after{ background: url(../img/background/top.webp) 0 0/cover no-repeat; }
 
 ._webp .catalog-main::after{ background: url(../img/background/categories.webp) 0 0/cover no-repeat; }
+
+@media (min-width: 118.75em){
+
+  ._webp .categories::after{ background: url(../img/background/portfolio2.webp) 0 0/cover no-repeat; }
+}
